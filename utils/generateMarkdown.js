@@ -1,7 +1,16 @@
 function generateMarkdown(data) {
   return `
 # ${data.title}
-
+* At least one badge
+* Project title
+* Description
+* Table of Contents
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
 `;
 }
 
