@@ -45,8 +45,8 @@ function promptUser() {
         },
         {
           type: "input",
-          message: "Name any contributing members:",
-          name: "contributors"
+          message: "How can someone contribute to your project? ",
+          name: "contributing"
         },
         {
           type: "input",
@@ -60,7 +60,8 @@ async function init(){
     try{
         const answers = await promptUser();
         console.log(answers);
-        await writeFileAsync("README.md", "testing, testing");
+        api.getUser(answers.username);
+        await writeFileAsync("output/README.md", "testing, testing");
     } catch(err){
         console.log(err);
     }

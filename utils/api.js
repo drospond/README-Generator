@@ -6,7 +6,6 @@ const api = {
     const queryUrl = `https://api.github.com/users/${username}`;
     axios.get(queryUrl).then(function(res) {
       console.log(res.data.avatar_url);
-      console.log(res.data.email);
     }).catch(error => console.log(error))
   }
 };
