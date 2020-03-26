@@ -40,8 +40,8 @@ function promptUser() {
         },
         {
           type: "input",
-          message: "Choose a liscence:",
-          name: "liscence"
+          message: "Choose a license:",
+          name: "license"
         },
         {
           type: "input",
@@ -58,10 +58,10 @@ function promptUser() {
 
 async function init(){
     try{
+        let profileImg;
         const answers = await promptUser();
-        console.log(answers);
-        api.getUser(answers.username);
-        await writeFileAsync("output/README.md", "testing, testing");
+        await api.getUser(answers.username).then(url => profileImg = url);
+        await writeFileAsync("output/README.md", generateMarkdown(answers, profileImg));
     } catch(err){
         console.log(err);
     }

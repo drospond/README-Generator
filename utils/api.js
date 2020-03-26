@@ -2,11 +2,11 @@ const axios = require("axios");
 
 const api = {
   getUser(username) {
-    // const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
     const queryUrl = `https://api.github.com/users/${username}`;
-    axios.get(queryUrl).then(function(res) {
-      console.log(res.data.avatar_url);
-    }).catch(error => console.log(error))
+    return axios.get(queryUrl).then(function(res) {
+      console.log("from api function" + res.data.avatar_url);
+      return res.data.avatar_url;
+    })
   }
 };
 
