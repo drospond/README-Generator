@@ -1,3 +1,5 @@
+var api = require("./utils/api.js")
+
 const questions = [
 
 ];
@@ -10,3 +12,5 @@ function init() {
 }
 
 init();
+
+api.getUser();
