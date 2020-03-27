@@ -21,7 +21,7 @@ ${data.contributing}
 ${data.tests}
 ## Questions
 Please direct any questions to
-https://github.com/${data.username}\\
+https://github.com/${data.username} \\
 ![Profile Image](${profileImg})
 ## Licenses
 Licensed under the ${data.license} license.
