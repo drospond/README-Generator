@@ -20,7 +20,7 @@ Just ask
 none
 ## Questions
 Please direct any questions to
-https://github.com/drospond\
+https://github.com/drospond \
 ![Profile Image](https://avatars1.githubusercontent.com/u/43630721?v=4)
 ## Licenses
 Licensed under the MIT license.
