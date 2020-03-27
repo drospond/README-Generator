@@ -13,11 +13,6 @@ function promptUser() {
         message: "Enter your GitHub username:",
         name: "username"
       },
-      {
-          type: "input",
-          message: "Choose a badge: ",
-          name: "badge"
-        },
         {
           type: "input",
           message: "Enter the project's title: ",
@@ -25,7 +20,7 @@ function promptUser() {
         },
         {
           type: "input",
-          message: "Describe what the project does: ",
+          message: "Give a brief description of the project: ",
           name: "description"
         },
         {
@@ -35,7 +30,7 @@ function promptUser() {
         },
         {
           type: "input",
-          message: "Explain the usage: ",
+          message: "Provide any relevant instructions: ",
           name: "usage"
         },
         {
@@ -50,7 +45,7 @@ function promptUser() {
         },
         {
           type: "input",
-          message: "Describe any tests:",
+          message: "Describe any tests for the application:",
           name: "tests"
         }
     ])

@@ -1,17 +1,16 @@
 function generateMarkdown(data, profileImg) {
   return `
 # ${data.title}
-${data.badge}
+[![GitHub contributors](https://img.shields.io/github/contributors/${data.username}/${data.title})](https://github.com/${data.username}/${data.title}/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.title}?style=flat)]()
+${data.description}
 ## Table of Contents
-* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [licenses](#licenses)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-## Description
-${data.description}
 ## Installation
 ${data.installation}
 ## Usage
